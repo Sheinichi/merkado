@@ -1,0 +1,90 @@
+
+
+.container{
+    
+    background-image: url(./market.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 610px;
+    max-height: 100%;
+
+    
+
+  }
+  
+  .container-form1{
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgba(0,0,0,0.6);
+    /* border: 2px inset white;
+    border-radius: 20px; */
+   
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    position:fixed;
+    text-align: left;
+   
+  
+  }
+  .input-box{
+    margin-bottom: 10px;
+  }
+  .container-form-registration{
+    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgba(0,0,0,0.6);
+    /* border: 2px inset white;
+    border-radius: 20px; */
+   
+    color: white;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    position:fixed;
+    text-align: left;
+    
+
+   
+  
+  }
+
+
+.container-form-registration form .form-details{
+  display: flex;
+  flex-wrap:  wrap;
+  justify-content: left;
+}
+
+form .form-details .input-box{
+  width: calc(100% /2 - 20px);
+}
+.container-form-login a:hover,
+.container-form-login a:active,
+.container-form-login a.active {
+    color: #f5951f;
+}
+.container-form-login a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-form-registration a:hover,
+.container-form-registration a:active,
+.container-form-registration a.active {
+    color: #f5951f;
+}
+.container-form-registration a {
+  text-decoration: none;
+  color: #ffffff;
+}

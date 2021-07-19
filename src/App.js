@@ -1,26 +1,70 @@
+import { Route, Switch } from 'react-router-dom';
+
+import AboutHome from './pages/AboutHome';
+import BuyerInfo from './pages/BuyerInfo';
+import Checkout from './pages/Checkout';
+import HowToPage from './pages/HowToPage';
+import Locate from './pages/Locate';
+import Order from './pages/Order';
+import Products from './pages/Products';
+import SellerInfo from './pages/SellerInfo';
+import SellerPage from './pages/SellerPage';
+import UserLogin from './pages/UserLogin';
+import UserRegistration from './pages/UserRegistration';
+
+import MainNavigation from './layout/MainNavigation';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    <div>
+      <MainNavigation />
+      <Switch>
+        <Route path='/' exact>
+         <UserLogin/>
+        </Route>
+        <Route path='/buyerinfo'>
+          <BuyerInfo/>
+        </Route>
+        <Route path='/checkout'>
+          <Checkout/>
+        </Route>
+        <Route path='/howtopage'>
+         <HowToPage/>
+        </Route>
+        <Route path='/locate'>
+          <Locate/>
+        </Route>
+        <Route path='/order'>
+          <Order/>
+        </Route>
+        <Route path='/products'>
+        <Products/>
+        </Route>
+        <Route path='/sellerInfo'>
+        <SellerInfo/>
+        </Route>
+        <Route path='/sellerPage'>
+        <SellerPage/>
+        </Route>
+        <Route path='/userRegistration'>
+          <UserRegistration/>
+        </Route>
+        <Route path='/AboutUs'>
+          <AboutHome/>
+        </Route>
+      </Switch>
+
+     
     </div>
+    
+
   );
+
+ 
+
 }
 
 export default App;
