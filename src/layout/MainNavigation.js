@@ -16,16 +16,16 @@ function MainNavigation(){
         <nav>
             <ul>
                 <li>
-                   <Link to ='/'></Link>
+                   <Link to ='/'>Products</Link>
                 </li>
                 <li>
-                   <Link to ='/products'>Order Products</Link>
+                   <Link to ='/Login'>Login</Link>
                 </li>
                 <li>
-                   <Link to ='/howtopage'>How to Use this App</Link>
+                   <Link to ='/SellerInfo'>SellerInfo</Link>
                 </li>
                 <li>
-                   <Link to ='/howtopage'>About Us</Link>
+                   <Link to ='/SellerPage'>SellerPage</Link>
                 </li>
                 <li></li>
                

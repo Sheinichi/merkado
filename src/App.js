@@ -23,7 +23,7 @@ function App() {
       <MainNavigation />
       <Switch>
         <Route path='/' exact>
-         <UserLogin/>
+         <Products/>
         </Route>
         <Route path='/buyerinfo'>
           <BuyerInfo/>
@@ -40,8 +40,8 @@ function App() {
         <Route path='/order'>
           <Order/>
         </Route>
-        <Route path='/products'>
-        <Products/>
+        <Route path='/Login'>
+        <UserLogin/>
         </Route>
         <Route path='/sellerInfo'>
         <SellerInfo/>
