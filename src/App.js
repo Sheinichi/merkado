@@ -14,11 +14,11 @@ import UserRegistration from "./pages/UserRegistration";
 import MainNavigation from "./layout/MainNavigation";
 import React, { useState, lazy, Suspense, useEffect, useContext } from "react";
 import { AuthProvider } from "./contexts/Auth";
-// const UserLogin = lazy(() => import("./pages/UserLogin"));
-import UserLogin from "./pages/UserLogin";
+// import UserLogin from "./pages/UserLogin";
 import { AuthContext } from "./contexts/Auth";
+const UserLogin = lazy(() => import("./pages/UserLogin"));
+
 function App() {
-	
 	const { user } = useContext(AuthContext);
 	console.log(user)
 	return (

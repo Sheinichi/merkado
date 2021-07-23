@@ -5,20 +5,22 @@ import { useHistory } from "react-router-dom";
 
 import { AuthContext } from "../contexts/Auth";
 
-const GET_PRODUCTS = gql`
-	query ExampleQuery {
-		getProducts {
+const GET_SELLER_INFO = gql`
+	query GetUser {
+		getSellerInfo {
 			id
-			name
-			price
-			description
+			username
+			storename
+			address
+			location
+			createdAt
 		}
 	}
 `;
 
 export default function BL() {
 	const { user } = useContext(AuthContext);
-	const { loading,error, data: getProducts } = useQuery(GET_PRODUCTS);
+	const { loading, error, data: getSellerInfo } = useQuery(GET_SELLER_INFO);
 
-	return { user, loading,error, getProducts };
+	return { user, loading, error, getSellerInfo };
 }
